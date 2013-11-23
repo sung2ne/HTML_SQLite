@@ -27,7 +27,7 @@
 		</script>
 	</head>
 	<body onload="init();">
-		<form name="todoForm">
+		<form name="todoForm" method="POST" onsubmit="addTodo(); return false;">
 			<input type="text" name="Todo" id="Todo" placeholder="내용을 입력해주세요." style="width: 200px;">
 			<input type="submit" value="추가">
 		</form>
